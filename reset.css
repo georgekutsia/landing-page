@@ -34,4 +34,6 @@ ul, li, a{
 
 body{
   padding: 0vw 12vw;
+  background: rgb(140,144,134);
+  background: radial-gradient(circle, rgba(140,144,134,0.36878501400560226) 30%, rgba(189,175,158,0.6460959383753502) 100%);
 }

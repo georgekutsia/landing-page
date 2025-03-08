@@ -1,31 +1,124 @@
-nav{
-  background-color: var(--my-light-orange);
+nav {
+  background-color: var(--my-sun-yellow);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  h3{
-    font-family: "Wallpoet", sans-serif;
-    font-size: calc(12px + 1.5vw);
-  }
+  border-radius: 0px 0px 40px 40px;
 }
 
-.main-nav-img{
+nav h3 {
+  font-family: "Wallpoet", sans-serif;
+  font-size: calc(12px + 1.5vw);
+}
+
+.main-nav-img {
   width: 50px;
   height: 50px;
   transition: 0.9s ease-in-out;
   cursor: pointer;
 }
-.main-nav-img:hover{
+
+.main-nav-img:hover {
   transform: translateY(20px);
   scale: 4;
 }
 
-.main-nav-ul{
+.main-nav-ul {
   display: flex;
   gap: 1vw;
+  font-size: calc(12px + 0.5vw);
 }
 
-.nav-parts{
-  width: 25%;
+.nav-parts {
+  width: 28%;
   text-align: center;
+}
+
+/* 🔥 Configuración base para los contenedores de fuego */
+.fire-nav-container {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 20%;
+  top: 5%;
+}
+
+.fire-nav-container-1,
+.fire-nav-container-2,
+.fire-nav-container-3 {
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  top: 5%;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* 🔥 Ajuste de posición de cada fuego */
+.fire-nav-container-1 {
+  margin-left: 0.5vw;
+}
+.fire-nav-container-2 {
+  margin-left: 2vw;
+
+}
+.fire-nav-container-3 {
+  margin-left: 0.4vw;
+}
+
+/* 🔥 Por defecto, los fuegos están ocultos */
+.fire-nav-container-0 {
+  display: none;
+}
+
+/* 🔥 Mostrar el fuego correspondiente cuando se selecciona un radio */
+#bbq-ss:checked ~ header nav .fire-nav-container-1 {
+  display: block;
+  opacity: 0.5;
+}
+
+#html-parrilla:checked ~ header nav .fire-nav-container-2 {
+  display: block;
+  opacity: 0.5;
+}
+
+#js-grill:checked ~ header nav .fire-nav-container-3 {
+  display: block;
+  opacity: 0.5;
+}
+
+/* 🔥 Animación de fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 📖 Ocultar todas las secciones por defecto */
+.cheatsheet-page-1,
+.cheatsheet-page-2,
+.cheatsheet-page-3 {
+  display: none;
+}
+
+/* 📖 Mostrar la sección correcta cuando el radio está seleccionado */
+#bbq-ss:checked ~ main .cheatsheet-page-1 {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+#html-parrilla:checked ~ main .cheatsheet-page-2 {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+#js-grill:checked ~ main .cheatsheet-page-3 {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
 }

@@ -1,49 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Donde las chuletas se reúnen a hacer una barbacoa">
-  <meta name="keywords" content="Chuletas Css Html Javascript barbacoa">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="animations.css">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="responsive.css">
-  <link rel="stylesheet" href="animation.css">
-  <script src="script.js" defer></script>
-  <title>Barbacodes</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="main-nav-btn nav-parts" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="nav-parts">
-        <img class="main-nav-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741389199/Chuleta_uraszs.png" alt="Chuleta chuletosa">
-      </div>
-        <h3 class="nav-parts" >Barbacodes</h3>
-      <ul class="main-nav-ul nav-parts">
-        <li><a href="#">BBQ-SS</a></li>
-        <li><a href="#">HTML-Parrilla</a></li>
-        <li><a href="#">JS Grill</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main></main>
-  <footer></footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Donde las chuletas se reúnen a hacer una barbacoa"
+    />
+    <meta name="keywords" content="Chuletas Css Html Javascript barbacoa" />
+    <link rel="icon" href="./assets/imgs/Chuleta.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Sixtyfour+Convergence&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <script src="script.js" defer></script>
+    <title>Barbacodes</title>
+  </head>
+  <body>
+    <!-- Inputs radio para activar fuego y secciones -->
+    <input type="radio" id="bbq-ss" name="fire-selector" hidden>
+    <input type="radio" id="html-parrilla" name="fire-selector" hidden>
+    <input type="radio" id="js-grill" name="fire-selector" hidden>
 
-  <script>
-    function toggleMenu() {
-      document.querySelector(".menu-btn").classList.toggle("active");
-    }
-  </script>
-</body>
+    <header>
+      <nav>
+        <div class="main-nav-btn nav-parts" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-parts">
+          <div class="fire-nav-container-0"></div>
+          <img class="main-nav-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741389199/Chuleta_uraszs.png" alt="Chuleta chuletosa"/>
+        </div>
+        <h3 class="nav-parts">Barbacodes</h3>
+        <ul class="main-nav-ul nav-parts">
+          <li>
+            <label for="bbq-ss">BBQ-SS</label>
+            <div class="fire-nav-container-0 fire-nav-container-1">
+              <div class="fire">
+                <div class="fire-left">
+                  <div class="main-fire"></div>
+                  <div class="particle-fire"></div>
+                </div>
+                <div class="fire-center">
+                  <div class="main-fire"></div>
+                  <div class="particle-fire"></div>
+                </div>
+                <div class="fire-right">
+                  <div class="main-fire"></div>
+                  <div class="particle-fire"></div>
+                </div>
+                <div class="fire-bottom">
+                  <div class="main-fire"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <label for="html-parrilla">HTML-Parrilla</label>
+            <div class="fire-nav-container-0 fire-nav-container-2">
+              <div class="fire">
+                <div class="fire-left">
+                  <div class="main-fire"></div>
+                  <div class="particle-fire"></div>
+                </div>
+                <div class="fire-center">
+                  <div class="main-fire"></div>
+                  <div class="particle-fire"></div>
+                </div>
+                <div class="fire-right">
+                  <div class="main-fire"></div>
+                  <div class="particle-fire"></div>
+                </div>
+                <div class="fire-bottom">
+                  <div class="main-fire"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <label for="js-grill">JS Grill</label>
+            <div class="fire-nav-container-0 fire-nav-container-3">
+              <div class="fire">
+                <div class="fire-left">
+                  <div class="main-fire"></div>
+                  <div class="particle-fire"></div>
+                </div>
+                <div class="fire-center">
+                  <div class="main-fire"></div>
+                  <div class="particle-fire"></div>
+                </div>
+                <div class="fire-right">
+                  <div class="main-fire"></div>
+                  <div class="particle-fire"></div>
+                </div>
+                <div class="fire-bottom">
+                  <div class="main-fire"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <section class="cheatsheet-page-1">
+          1
+        </section>
+        <section class="cheatsheet-page-2">
+          2
+        </section>
+        <section class="cheatsheet-page-3">
+          3
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector('.menu-btn').classList.toggle('active')
+      }
+    </script>
+  </body>
 </html>
