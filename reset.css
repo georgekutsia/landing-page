@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+:root {
+  --my-textBlack: rgb(0, 0, 0);
+  --my-textWhite: rgb(255, 255, 255);
+  --my-grey: #b0cbc1;
+  --my-light-orange: #e15030;
+  --my-red: rgb(242, 0, 0);
+  --my-sun-yellow: #ffe067;
+  --my-yellow: #d4ff00;
+  --my-outstandSun: #ffc41d;
+  --my-outstandBlue: rgb(0, 179, 255);
+  --my-outstandRed: rgb(255, 15, 15) ;
+  --my-outstandGreen: rgb(119, 255, 0) ;
+  --my-orange: rgb(255, 123, 0);
+  --my-dark-orange: #9e3720;
+  --my-black: #000000;
+  --my-grey: #a6a6a6;
+  --my-white: #e5e5e2;
+  --my-darkBlue: rgb(4, 46, 75);
+  --my-blue: #0585da;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: var(--my-textBlack);
+  font-family: "Afacad Flux", serif;
+}
+ul, li, a{
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  padding: 0vw 12vw;
+}
