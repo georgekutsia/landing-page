@@ -12,8 +12,8 @@ padding-top: 5vw;
   }
   img {
     border-radius: 10px;
-    width: 70%;
-    min-width: 550px;
+    width: 50%;
+    min-width: 320px;
   }
 }
 .main-page-gallery1 {
@@ -25,12 +25,12 @@ padding-top: 5vw;
 }
 .main-page-imgs {
   width: 30%;
-  min-width: 350px;
+  min-width: 320px;
   border-radius: 15px;
   border: 5px inset rgba(0, 0, 0, 0.813);
   transition: 0.3s ease-in-out;
   img {
-    min-width: 350px;
+    min-width: 320px;
     border-radius: 10px;
     cursor: pointer;
   }

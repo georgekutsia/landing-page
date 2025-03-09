@@ -3,15 +3,19 @@
     background-color: rgb(216, 153, 153);
   }
 } */
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 820px) {
   body {
-    background-color: rgb(202, 205, 201);
+    background-color: rgb(135, 242, 99);
+  }
+  nav {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 375px) {
   body {
     background-color: rgb(159, 159, 225);
+  padding: 0vw;
   }  
 }  
 
