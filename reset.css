@@ -26,6 +26,7 @@
   padding: 0px;
   color: var(--my-textBlack);
   font-family: "Afacad Flux", serif;
+  cursor:url("./assets/cursor/cursor.cur"), auto;
 }
 ul, li, a{
   text-decoration: none;
@@ -33,7 +34,11 @@ ul, li, a{
 }
 
 body{
-  padding: 0vw 12vw;
-  background: rgb(140,144,134);
-  background: radial-gradient(circle, rgba(140,144,134,0.36878501400560226) 30%, rgba(189,175,158,0.6460959383753502) 100%);
+  padding: 0vw 5vw;
+    --s: 100px; 
+    background:
+      linear-gradient(135deg,#0000 18.75%,#f5e5d3 0 31.25%,#0000 0),
+      repeating-linear-gradient(45deg,#f5e5d3 -6.25% 6.25%,#ded7c200 0 18.75%);
+    background-size: var(--s) var(--s); 
+    background-attachment: fixed; /
 }

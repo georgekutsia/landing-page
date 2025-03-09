@@ -1,0 +1,40 @@
+.main-page {
+  align-items: center;
+  margin: auto;
+  text-align: center;
+padding-top: 5vw;
+  h1 {
+    font-size: calc(12px + 5vw);
+  }
+  h2 {
+    font-size: calc(12px + 3vw);
+
+  }
+  img {
+    border-radius: 10px;
+    width: 70%;
+    min-width: 550px;
+  }
+}
+.main-page-gallery1 {
+  margin: 5vw;
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main-page-imgs {
+  width: 30%;
+  min-width: 350px;
+  border-radius: 15px;
+  border: 5px inset rgba(0, 0, 0, 0.813);
+  transition: 0.3s ease-in-out;
+  img {
+    min-width: 350px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+.main-page-imgs:hover {
+  scale: 1.3;
+}

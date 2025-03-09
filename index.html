@@ -17,19 +17,22 @@
       href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Sixtyfour+Convergence&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="animations.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="responsive.css" />
     <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="footer.css" />
     <script src="script.js" defer></script>
     <title>Barbacodes</title>
   </head>
   <body>
     <!-- Inputs radio para activar fuego y secciones -->
-    <input type="radio" id="bbq-ss" name="fire-selector" hidden>
-    <input type="radio" id="html-parrilla" name="fire-selector" hidden>
-    <input type="radio" id="js-grill" name="fire-selector" hidden>
+    <input type="radio" id="main-page" name="fire-selector" hidden  checked/>
+    <input type="radio" id="bbq-ss" name="fire-selector" hidden />
+    <input type="radio" id="html-parrilla" name="fire-selector" hidden />
+    <input type="radio" id="js-grill" name="fire-selector" hidden />
 
     <header>
       <nav>
@@ -40,7 +43,13 @@
         </div>
         <div class="nav-parts">
           <div class="fire-nav-container-0"></div>
-          <img class="main-nav-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741389199/Chuleta_uraszs.png" alt="Chuleta chuletosa"/>
+          <label for="main-page">
+            <img
+              class="main-nav-img"
+              src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741389199/Chuleta_uraszs.png"
+              alt="Chuleta chuletosa"
+            />
+          </label>
         </div>
         <h3 class="nav-parts">Barbacodes</h3>
         <ul class="main-nav-ul nav-parts">
@@ -117,18 +126,41 @@
     </header>
 
     <main>
-        <section class="cheatsheet-page-1">
-          1
-        </section>
-        <section class="cheatsheet-page-2">
-          2
-        </section>
-        <section class="cheatsheet-page-3">
-          3
-        </section>
+      <section class="main-page">
+        <h1>¡Prueba nuestras chuletas!</h1>
+        <h2>
+          Encontrarás lo que necesites,  para todos los gustos
+        </h2>
+        <img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741475653/chuletaHtm_ogi4bx.png" alt="">
+        <div class="main-page-gallery1">
+          <div class="main-page-imgs">
+            <h3>Los condimentos mas sabrosos para HTML </h3>
+            <h4>Bocaditos perfectos para cualquier ocasión y de cualquier forma</h4>
+            <label for="bbq-ss"><img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741474332/chuletaHTML_gmaamg.png" alt="BBQ HTML"></label>
+            
+          </div>
+          <div class="main-page-imgs">
+            <h3>Los condimentos mas sabrosos para HTML </h3>
+            <h4>¿Quieres un mordisco de prueba? Métele console.log()</h4>
+            <label for="html-parrilla"><img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741475650/chuletaJs_lzknzf.png" alt="BBQ JS"></label>
+
+          </div>
+          <div class="main-page-imgs">
+            <h3>Los condimentos mas sabrosos para CSS </h3>
+            <h4>No dejes que tu CSS se vuelva un bistec sin sazón: usa variables y mixins</h4>
+            <label for="js-grill"><img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741475839/chuletaCSS_s03rnd.png" alt="BBQ CSS"></label>
+
+          </div>
+        </div>
+      </section>
+      <section class="cheatsheet-page-1">1</section>
+      <section class="cheatsheet-page-2">2</section>
+      <section class="cheatsheet-page-3">3</section>
     </main>
 
-    <footer></footer>
+    <footer >
+      footer
+    </footer>
 
     <script>
       function toggleMenu() {
