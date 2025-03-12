@@ -3,19 +3,48 @@
     background-color: rgb(216, 153, 153);
   }
 } */
+@media screen and (min-width: 821px) {
+  .main-nav-img:hover {
+    transform: translateY(20px);
+    scale: 4;
+  }
+}
+
 @media screen and (max-width: 820px) {
   body {
-    background-color: rgb(135, 242, 99);
+      background-color: var(--my-outstandSun);
+      margin: 0px;
+      padding: 0px;
   }
   nav {
     width: 100%;
   }
+  .moving-gallery-div {
+    overflow: hidden;
+    width: 100vw;
+  }
+  /* .main-page{
+width: 100%;
+margin-left: 30px;
+padding: 0px;
+  } */
 }
 
 @media screen and (max-width: 375px) {
   body {
     background-color: rgb(159, 159, 225);
-  padding: 0vw;
+     padding: 0vw;
   }  
+  nav {
+    width: 100%;
+  }
+  .main-page{
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+  }
+  .main-page-animation-div{
+    display: none;
+  }
 }  
 

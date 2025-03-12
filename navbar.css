@@ -1,16 +1,27 @@
 nav {
-  background-color: var(--my-sun-yellow);
+  background: hsla(51, 100%, 48%, 1);
+  background: linear-gradient(90deg, hsla(51, 100%, 48%, 1) 0%, hsla(48, 100%, 44%, 1) 18%, hsla(48, 85%, 43%, 1) 47%, hsla(48, 100%, 44%, 1) 77%, hsla(51, 100%, 48%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(51, 100%, 48%, 1) 0%, hsla(48, 100%, 44%, 1) 18%, hsla(48, 85%, 43%, 1) 47%, hsla(48, 100%, 44%, 1) 77%, hsla(51, 100%, 48%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(51, 100%, 48%, 1) 0%, hsla(48, 100%, 44%, 1) 18%, hsla(48, 85%, 43%, 1) 47%, hsla(48, 100%, 44%, 1) 77%, hsla(51, 100%, 48%, 1) 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 0px 0px 40px 40px;
   position: fixed;
+  z-index: 10;
   width: 90vw;
+  color: var(--my-textBlack);
+  label{
+      color: var(--my-textBlack);
+      z-index: 3;
+  }
 }
 
 nav h3 {
   font-family: "Wallpoet", sans-serif;
   font-size: calc(12px + 1.5vw);
+  color: var(--my-textBlack);
+
 }
 
 .main-nav-img {
@@ -20,10 +31,6 @@ nav h3 {
   cursor: pointer;
 }
 
-.main-nav-img:hover {
-  transform: translateY(20px);
-  scale: 4;
-}
 
 .main-nav-ul {
   display: flex;
@@ -51,7 +58,7 @@ nav h3 {
   width: 100px;
   height: 10px;
   position: absolute;
-  top: 6.5%;
+  margin-top: 20px;
   opacity: 0;
   display: none;
   transition: opacity 0.3s ease-in-out;
@@ -72,22 +79,24 @@ nav h3 {
 /* 🔥 Por defecto, los fuegos están ocultos */
 .fire-nav-container-0 {
   display: none;
+  z-index: -1;
+
 }
 
 /* 🔥 Mostrar el fuego correspondiente cuando se selecciona un radio */
 #bbq-ss:checked ~ header nav .fire-nav-container-1 {
   display: block;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 #html-parrilla:checked ~ header nav .fire-nav-container-2 {
   display: block;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 #js-grill:checked ~ header nav .fire-nav-container-3 {
   display: block;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .main-page,

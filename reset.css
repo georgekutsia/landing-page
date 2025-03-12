@@ -4,7 +4,6 @@
   --my-textBlack: rgb(0, 0, 0);
   --my-textWhite: rgb(255, 255, 255);
   --my-grey: #b0cbc1;
-  --my-light-orange: #e15030;
   --my-red: rgb(242, 0, 0);
   --my-sun-yellow: #ffe067;
   --my-yellow: #d4ff00;
@@ -13,7 +12,8 @@
   --my-outstandRed: rgb(255, 15, 15) ;
   --my-outstandGreen: rgb(119, 255, 0) ;
   --my-orange: rgb(255, 123, 0);
-  --my-dark-orange: #9e3720;
+  --my-light-orange: #e15030;
+  --my-dark-orange: #5f1302;
   --my-black: #000000;
   --my-grey: #a6a6a6;
   --my-white: #e5e5e2;
@@ -24,7 +24,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  color: var(--my-textBlack);
+  color: var(--my-textWhite);
   font-family: "Afacad Flux", serif;
   cursor:url("./assets/cursor/cursor.cur"), auto;
 }
@@ -35,10 +35,11 @@ ul, li, a{
 
 body{
   padding: 0vw 5vw;
-    --s: 100px; 
+    --s: 50px; 
     background:
-      linear-gradient(135deg,#0000 18.75%,#f5e5d3 0 31.25%,#0000 0),
-      repeating-linear-gradient(45deg,#f5e5d3 -6.25% 6.25%,#ded7c200 0 18.75%);
+      linear-gradient(135deg,#0000 18.75%,var(--my-black) 0 31.25%,#0000 0),
+      repeating-linear-gradient(45deg,var(--my-black) -6.25% 6.25%,#ded7c200 0 18.75%);
     background-size: var(--s) var(--s); 
-    background-attachment: fixed; /
+    background-attachment: fixed; 
+    background-color: var(--my-dark-orange);
 }

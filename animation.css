@@ -229,3 +229,45 @@
     transform: scale(1);
   }
 }
+
+@keyframes moveLeft {
+  from {
+      opacity: 0;
+      transform: scale(0.2) translateX(0) rotate(0deg);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1) translateX(-35vw) rotate(-15deg);
+  }
+}
+
+@keyframes moveRight {
+  from {
+      opacity: 0;
+      transform: scale(0.2) translateX(0) rotate(0deg);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1) translateX(35vw) rotate(15deg);
+  }
+}
+
+/* Aplicar animaciones con delay en abanico */
+.main-img-a { animation: moveLeft 1s ease-out forwards 0.2s; margin-top: calc(10px + 7vw);}
+.main-img-b { animation: moveLeft 1s ease-out forwards 0.4s; margin-top: calc(10px + 21vw); z-index: 3;}
+.main-img-c { animation: moveLeft 1s ease-out forwards 0.6s; margin-top: calc(10px + 38vw); z-index: 0;}
+
+.main-img-d { animation: moveRight 1s ease-out forwards 0.2s; margin-top: calc(10px + 5vw);}
+.main-img-e { animation: moveRight 1s ease-out forwards 0.4s; margin-top: calc(10px + 23vw);}
+.main-img-f { animation: moveRight 1s ease-out forwards 0.6s; margin-top: calc(10px + 45vw);}
+
+
+
+@keyframes moveGallery {
+  from {
+    transform: translateX(1800px);
+  }
+  to {
+    transform: translateX(-3700px);
+  }
+}
