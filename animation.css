@@ -231,35 +231,45 @@
 }
 
 @keyframes moveLeft {
-  from {
-      opacity: 0;
-      transform: scale(0.2) translateX(0) rotate(0deg);
-  }
-  to {
-      opacity: 1;
-      transform: scale(1) translateX(-35vw) rotate(-15deg);
-  }
+  0% {
+    opacity: 0;
+    transform: scale(0.2) translateX(0) rotate(0deg);
+}
+10%, 90% {
+    opacity: 1;
+    transform: scale(1) translateX(-35vw) rotate(-15deg);
+    z-index: 2; /* Esto es para que se pueda hacer hover... que como sale detrás de la foto, se queda sin hover */
+}
+100% {
+    opacity: 0;
+    transform: scale(0.2) translateX(0) rotate(0deg);
+}
 }
 
 @keyframes moveRight {
-  from {
+  0% {
       opacity: 0;
       transform: scale(0.2) translateX(0) rotate(0deg);
   }
-  to {
+  10%, 90% {
       opacity: 1;
       transform: scale(1) translateX(35vw) rotate(15deg);
+      z-index: 2;  /* Esto es para que se pueda hacer hover... que como sale detrás de la foto, se queda sin hover */
+  }
+  100% {
+      opacity: 0;
+      transform: scale(0.2) translateX(0) rotate(0deg);
   }
 }
 
 /* Aplicar animaciones con delay en abanico */
-.main-img-a { animation: moveLeft 1s ease-out forwards 0.2s; margin-top: calc(10px + 7vw);}
-.main-img-b { animation: moveLeft 1s ease-out forwards 0.4s; margin-top: calc(10px + 21vw); z-index: 3;}
-.main-img-c { animation: moveLeft 1s ease-out forwards 0.6s; margin-top: calc(10px + 38vw); z-index: 0;}
+.main-img-a { animation: moveLeft 10s ease-out infinite 0.2s; margin-top: calc(10px + 7vw);}
+.main-img-b { animation: moveLeft 10s ease-out infinite 0.4s; margin-top: calc(10px + 21vw); z-index: 3;}
+.main-img-c { animation: moveLeft 10s ease-out infinite 0.6s; margin-top: calc(10px + 38vw); z-index: 0;}
 
-.main-img-d { animation: moveRight 1s ease-out forwards 0.2s; margin-top: calc(10px + 5vw);}
-.main-img-e { animation: moveRight 1s ease-out forwards 0.4s; margin-top: calc(10px + 23vw);}
-.main-img-f { animation: moveRight 1s ease-out forwards 0.6s; margin-top: calc(10px + 45vw);}
+.main-img-d { animation: moveRight 10s ease-out infinite 0.2s; margin-top: calc(10px + 5vw);}
+.main-img-e { animation: moveRight 10s ease-out infinite 0.4s; margin-top: calc(10px + 23vw);}
+.main-img-f { animation: moveRight 10s ease-out infinite 0.6s; margin-top: calc(10px + 45vw);}
 
 
 

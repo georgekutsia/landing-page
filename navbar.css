@@ -8,8 +8,11 @@ nav {
   align-items: center;
   border-radius: 0px 0px 40px 40px;
   position: fixed;
-  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
   width: 90vw;
+  z-index: 10;
+  
   color: var(--my-textBlack);
   label{
       color: var(--my-textBlack);

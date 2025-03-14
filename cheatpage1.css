@@ -1,0 +1,39 @@
+.cheatsheet-page-1{
+  padding-top: 100px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  h1{
+    font-size: calc(14px + 1.5vw);
+    text-shadow: 0px 0px 10px black;
+  }
+}
+
+.cheat1-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cheat1-flex-imgs {
+  display: flex;
+  flex-wrap: wrap; /* Para que se ajusten si la pantalla es más pequeña */
+  justify-content: center;
+  gap: 10px; /* Espacio entre las imágenes */
+  width: 100%; /* Asegura que el contenedor use el ancho disponible */
+}
+
+.cheat1-flex-div {
+  flex: 1 0 700px; /* Permite que crezcan, pero mínimo 300px */
+  display: flex; /* Centra la imagen dentro */
+  justify-content: center;
+  align-items: center;
+}
+
+.cheat1-flex-img{
+  width: 100%; /* Hace que la imagen ocupe el div */
+  max-width: 500px; /* Máximo 300px para respetar el flex */
+  border-radius: 10px;
+}
