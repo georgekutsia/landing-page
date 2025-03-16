@@ -281,3 +281,13 @@
     transform: translateX(-3700px);
   }
 }
+
+
+@keyframes growMore {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}

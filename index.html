@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Sixtyfour+Convergence&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="animations.css" />
@@ -24,16 +28,16 @@
     <link rel="stylesheet" href="responsive.css" />
     <link rel="stylesheet" href="animation.css" />
     <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="cheatpage1.css">
-    <link rel="stylesheet" href="cheatpage2.css">
-    <link rel="stylesheet" href="cheatpage3.css">
+    <link rel="stylesheet" href="cheatpage1.css" />
+    <link rel="stylesheet" href="cheatpage2.css" />
+    <link rel="stylesheet" href="cheatpage3.css" />
     <script src="script.js" defer></script>
     <title>Barbacodes</title>
   </head>
   <body>
     <!-- Inputs radio para activar fuego y secciones -->
-    <input type="radio" id="main-page" name="fire-selector" hidden checked/>
-    <input type="radio" id="bbq-ss" name="fire-selector" hidden />
+    <input type="radio" id="main-page" name="fire-selector" hidden />
+    <input type="radio" id="bbq-ss" name="fire-selector" hidden checked />
     <input type="radio" id="html-parrilla" name="fire-selector" hidden />
     <input type="radio" id="js-grill" name="fire-selector" hidden />
 
@@ -131,45 +135,107 @@
     <main>
       <section class="main-page">
         <h1>¡Prueba nuestras chuletas!</h1>
-        <h2>
-          Encontrarás lo que necesites,  para todos los gustos
-        </h2>
+        <h2>Encontrarás lo que necesites, para todos los gustos</h2>
         <div class="main-page-img-div">
-          <img class="main-img-2" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741475653/chuletaHtm_ogi4bx.png" alt="Chuletas de form">
-          <img class="main-img-1" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/q_auto:low/v1741599029/mesaChuletasTodas_lcwvvk.webp" alt="Chuletas de form">
+          <img
+            class="main-img-2"
+            src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741475653/chuletaHtm_ogi4bx.png"
+            alt="Chuletas de form"
+          />
+          <img
+            class="main-img-1"
+            src="https://res.cloudinary.com/dtv1oj9bq/image/upload/q_auto:low/v1741599029/mesaChuletasTodas_lcwvvk.webp"
+            alt="Chuletas de form"
+          />
         </div>
         <div class="main-page-animation-div">
-          <img class="main-imgs main-img-a" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741610146/chickenImg_eby61c.png" alt="Chuletas de form">
-          <img class="main-imgs main-img-b" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741610142/chuletaImg_zti7kp.png" alt="Chuletas de form">
-          <img class="main-imgs main-img-c" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741607244/chorizosImg_oh74wh.png" alt="Chuletas de form">
-          <img class="main-imgs main-img-d" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741610143/salchichas_Img_l9an8w.png" alt="Chuletas de form">
-          <img class="main-imgs main-img-e" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741610220/ribsImg_bzni9x.png" alt="Chuletas de form">
-          <img class="main-imgs main-img-f" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741610141/burguerImg_biufxk.png" alt="Chuletas de form">
+          <img
+            class="main-imgs main-img-a"
+            src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741610146/chickenImg_eby61c.png"
+            alt="Chuletas de form"
+          />
+          <img
+            class="main-imgs main-img-b"
+            src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741610142/chuletaImg_zti7kp.png"
+            alt="Chuletas de form"
+          />
+          <img
+            class="main-imgs main-img-c"
+            src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741607244/chorizosImg_oh74wh.png"
+            alt="Chuletas de form"
+          />
+          <img
+            class="main-imgs main-img-d"
+            src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741610143/salchichas_Img_l9an8w.png"
+            alt="Chuletas de form"
+          />
+          <img
+            class="main-imgs main-img-e"
+            src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741610220/ribsImg_bzni9x.png"
+            alt="Chuletas de form"
+          />
+          <img
+            class="main-imgs main-img-f"
+            src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741610141/burguerImg_biufxk.png"
+            alt="Chuletas de form"
+          />
         </div>
         <div class="main-page-gallery1">
           <div class="main-page-imgs">
-            <h3>Los condimentos mas sabrosos para HTML </h3>
-            <h4>Bocaditos perfectos para cualquier ocasión y de cualquier forma</h4>
+            <h3>Los condimentos mas sabrosos para HTML</h3>
+            <h4>
+              Bocaditos perfectos para cualquier ocasión y de cualquier forma
+            </h4>
             <div class="main-page-gallery1-labels">
-              <label for="bbq-ss"><img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741474332/chuletaHTML_gmaamg.png" alt="BBQ HTML"></label>
-              <label for="bbq-ss"><img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741599029/mesaChuletasTodas_lcwvvk.webp" alt="BBQ HTML"></label>
+              <label for="bbq-ss"
+                ><img
+                  src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741474332/chuletaHTML_gmaamg.png"
+                  alt="BBQ HTML"
+              /></label>
+              <label for="bbq-ss"
+                ><img
+                  src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741599029/mesaChuletasTodas_lcwvvk.webp"
+                  alt="BBQ HTML"
+              /></label>
             </div>
           </div>
           <div class="main-page-imgs">
-            <h3>Las mejores recetas de Javascript </h3>
-            <h4>¿Quieres un mordisco de prueba? Métele un console.log("Saborear el conocimiento") </h4>
+            <h3>Las mejores recetas de Javascript</h3>
+            <h4>
+              ¿Quieres un mordisco de prueba? Métele un console.log("Saborear el
+              conocimiento")
+            </h4>
             <div class="main-page-gallery1-labels">
-            <label for="html-parrilla"><img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741475650/chuletaJs_lzknzf.png" alt="BBQ JS"></label>
-            <label for="html-parrilla"><img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741599030/mesaChuletasJavascript_jlzovw.webp" alt="BBQ JS"></label>
-          </div>
+              <label for="html-parrilla"
+                ><img
+                  src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741475650/chuletaJs_lzknzf.png"
+                  alt="BBQ JS"
+              /></label>
+              <label for="html-parrilla"
+                ><img
+                  src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741599030/mesaChuletasJavascript_jlzovw.webp"
+                  alt="BBQ JS"
+              /></label>
+            </div>
           </div>
           <div class="main-page-imgs">
-            <h3>Los condimentos mas sabrosos para CSS </h3>
-            <h4>No dejes que tu CSS se vuelva un bistec sin sazón: usa variables y mixins</h4>
+            <h3>Los condimentos mas sabrosos para CSS</h3>
+            <h4>
+              No dejes que tu CSS se vuelva un bistec sin sazón: usa variables y
+              mixins
+            </h4>
             <div class="main-page-gallery1-labels">
-            <label for="js-grill"><img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741475839/chuletaCSS_s03rnd.png" alt="BBQ CSS"></label>
-            <label for="js-grill"><img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741599032/mesaChuletasCss_ncypfu.webp" alt="BBQ CSS"></label>
-          </div>
+              <label for="js-grill"
+                ><img
+                  src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741475839/chuletaCSS_s03rnd.png"
+                  alt="BBQ CSS"
+              /></label>
+              <label for="js-grill"
+                ><img
+                  src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741599032/mesaChuletasCss_ncypfu.webp"
+                  alt="BBQ CSS"
+              /></label>
+            </div>
           </div>
         </div>
         <div class="moving-gallery-div">
@@ -177,183 +243,705 @@
           <h4>No importa de donde vienes, quien eres o como piensas.</h4>
           <h4>Siempre podrás deleitarte con estos manjares</h4>
           <div class="moving-gallery-imgs-1">
-            <img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741613061/eating1_nedpag.webp" alt="">
-            <img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741614795/easting8_nxelxe.webp" alt="">
-            <img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741613062/eating5_rntw8v.webp" alt="">
-            <img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741615177/easting10_f7h8aa.webp" alt="">
-            <img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741613061/eating2_lvfasw.webp" alt="">
-            <img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741613061/eating3_xgerlx.webp" alt="">
+            <img
+              src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741613061/eating1_nedpag.webp"
+              alt=""
+            />
+            <img
+              src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741614795/easting8_nxelxe.webp"
+              alt=""
+            />
+            <img
+              src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741613062/eating5_rntw8v.webp"
+              alt=""
+            />
+            <img
+              src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741615177/easting10_f7h8aa.webp"
+              alt=""
+            />
+            <img
+              src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741613061/eating2_lvfasw.webp"
+              alt=""
+            />
+            <img
+              src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741613061/eating3_xgerlx.webp"
+              alt=""
+            />
           </div>
           <div class="moving-gallery-imgs-2">
-            <img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741614795/easting9_p9e1ol.webp" alt="">
-            <img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741614796/eating7_mauaeb.webp" alt="">
-            <img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741615178/easting11_r44zac.webp" alt="">
-            <img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741615177/easting12_a1buk4.webp" alt="">
-            <img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741615353/eating13_ldhvoe.webp" alt="">
+            <img
+              src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741614795/easting9_p9e1ol.webp"
+              alt=""
+            />
+            <img
+              src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741614796/eating7_mauaeb.webp"
+              alt=""
+            />
+            <img
+              src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741615178/easting11_r44zac.webp"
+              alt=""
+            />
+            <img
+              src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741615177/easting12_a1buk4.webp"
+              alt=""
+            />
+            <img
+              src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741615353/eating13_ldhvoe.webp"
+              alt=""
+            />
             <!-- <img src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741613061/eating3_xgerlx.webp" alt=""> -->
           </div>
         </div>
         <section class="figure-gallery-section">
-          <h2>Mira lo que tienen que decir sobre nosotros algunos de nuestros usuarios</h2>
+          <h2>
+            Mira lo que tienen que decir sobre nosotros algunos de nuestros
+            usuarios
+          </h2>
           <div class="figure-gallery-div">
             <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684384/inter1_tog0ei.webp" alt="Persona hablando">
-              <figcaption>"Si el código es carne, Barbacodes es mi parrilla favorita."</figcaption>
-          </figure>
-          <figure>
-            <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889689/inter13qw_gegnbc.webp" alt="Persona hablando">
-            <figcaption>"No sé si soy programador o parrillero, porque vivo rodeado de chuletas."</figcaption>
-        </figure>
-            <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741727816/inter52_zhznym.webp" alt="Persona hablando">
-              <figcaption>"Sin Barbacodes estaría masticando errores en vez de código."</figcaption>
-          </figure>
-            <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741727777/inter123_pwer7m.webp" alt="Persona hablando">
-              <figcaption>"Cuando el código se me quema, corro a Barbacodes para salvar la cena."</figcaption>
-          </figure>
-            <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684545/inter441_notcsr.webp" alt="Persona hablando">
-              <figcaption>"Antes de Barbacodes, mi código parecía carne cruda. Ahora está en su punto."</figcaption>
-          </figure>
-            <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684384/inter12_ndepr0.webp" alt="Persona hablando">
-              <figcaption>"¿Compilar sin errores? Solo si tengo mi chuleta de Barbacodes a mano."</figcaption>
-          </figure>
-            <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684384/inter112_ypxrgb.webp" alt="Persona hablando">
-              <figcaption>"Leer la documentación es aburrido… pero en Barbacodes las chuletas son sabrosas."</figcaption>
-          </figure>
-            <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684383/inter19_he74sc.webp" alt="Persona hablando">
-              <figcaption>"Sin Barbacodes, mis divs se caerían como hamburguesas mal armadas."</figcaption>
-          </figure>
-            <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684383/inter113_pxmeos.webp" alt="Persona hablando">
-              <figcaption>"Las chuletas de Barbacodes son el atajo secreto del programador hambriento."</figcaption>
-          </figure>
-            <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684383/inter142_vobzs2.webp" alt="Persona hablando">
-              <figcaption>"Aprender a programar sin Barbacodes es como intentar asar carne sin fuego."</figcaption>
-          </figure>
-          <figure>
-            <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684383/inter14_wmjhzh.webp" alt="Persona hablando">
-            <figcaption>"Aprendí más con estas chuletas que en todo mi curso de programación."</figcaption>
-        </figure>
-            <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684382/inter17_actii9.webp" alt="Persona hablando">
-              <figcaption>"Mis clases en CSS flotaban sin sentido hasta que las puse sobre la parrilla de Barbacodes."</figcaption>
-          </figure>
-            <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684382/inter14876_u0zv4x.webp" alt="Persona hablando">
-              <figcaption>"No hay nada más delicioso que un código limpio y bien comentado con Barbacodes."</figcaption>
-          </figure>
-            <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684382/inter178_jpbi20.webp" alt="Persona hablando">
-              <figcaption>"Si programar es cocinar, Barbacodes es mi mejor chef."</figcaption>
-          </figure>
-            <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684382/inter45_at1naz.webp" alt="Persona hablando">
-              <figcaption>"Ella me enseña CSS, yo le enseño JavaScript, y Barbacodes nos une como Git con un buen merge."</figcaption>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684384/inter1_tog0ei.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Si el código es carne, Barbacodes es mi parrilla favorita."
+              </figcaption>
             </figure>
             <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684382/inter43_wbmpzt.webp" alt="Persona hablando">
-              <figcaption>"Dame una chuleta de Barbacodes y conquistaré el frontend y el backend."</figcaption>
-          </figure>
-          <figure>
-            <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889690/inter13q_cwlpun.webp" alt="Persona hablando">
-            <figcaption>"No importa cuánto sepas, siempre hay una chuleta que te salva el día."</figcaption>
-          </figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889689/inter13qw_gegnbc.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "No sé si soy programador o parrillero, porque vivo rodeado de
+                chuletas."
+              </figcaption>
+            </figure>
             <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684381/inter1532_lvs8gx.webp" alt="Persona hablando">
-              <figcaption>"Cada vez que me trabo en un bug, mi instinto me dice: revisa Barbacodes."</figcaption>
-          </figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741727816/inter52_zhznym.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Sin Barbacodes estaría masticando errores en vez de código."
+              </figcaption>
+            </figure>
             <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684381/inter152_x8x7fk.webp" alt="Persona hablando">
-              <figcaption>"Si programar es un asado, Barbacodes es el chef maestro."</figcaption>
-          </figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741727777/inter123_pwer7m.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Cuando el código se me quema, corro a Barbacodes para salvar la
+                cena."
+              </figcaption>
+            </figure>
             <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684381/inter48_chqz1t.webp" alt="Persona hablando">
-              <figcaption>"Algunos llevan un diccionario, yo siempre llevo mi chuleta de Barbacodes."</figcaption>
-          </figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684545/inter441_notcsr.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Antes de Barbacodes, mi código parecía carne cruda. Ahora está
+                en su punto."
+              </figcaption>
+            </figure>
             <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684381/inter452_weliqv.webp" alt="Persona hablando">
-              <figcaption>"La diferencia entre un código quemado y uno perfecto es una buena chuleta de Barbacodes."</figcaption>
-          </figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684384/inter12_ndepr0.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "¿Compilar sin errores? Solo si tengo mi chuleta de Barbacodes a
+                mano."
+              </figcaption>
+            </figure>
             <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741891224/inter13ecd_cssk0a.webp" alt="Persona hablando">
-              <figcaption>"Si programar fuera cocinar, Barbacodes sería mi libro de recetas favorito."</figcaption>
-          </figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684384/inter112_ypxrgb.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Leer la documentación es aburrido… pero en Barbacodes las
+                chuletas son sabrosas."
+              </figcaption>
+            </figure>
             <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684383/inter109_tdto10.webp" alt="Persona hablando">
-              <figcaption>"No sé si soy desarrollador o parrillero, porque en Barbacodes encuentro de todo."</figcaption>
-          </figure>
-          <figure>
-            <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889691/inter13klj_crmp7y.webp" alt="Persona hablando">
-            <figcaption>"Antes pasaba horas buscando soluciones, ahora solo paso por Barbacodes y listo"</figcaption>
-        </figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684383/inter19_he74sc.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Sin Barbacodes, mis divs se caerían como hamburguesas mal
+                armadas."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684383/inter113_pxmeos.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Las chuletas de Barbacodes son el atajo secreto del programador
+                hambriento."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684383/inter142_vobzs2.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Aprender a programar sin Barbacodes es como intentar asar carne
+                sin fuego."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684383/inter14_wmjhzh.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Aprendí más con estas chuletas que en todo mi curso de
+                programación."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684382/inter17_actii9.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Mis clases en CSS flotaban sin sentido hasta que las puse sobre
+                la parrilla de Barbacodes."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684382/inter14876_u0zv4x.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "No hay nada más delicioso que un código limpio y bien comentado
+                con Barbacodes."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684382/inter178_jpbi20.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Si programar es cocinar, Barbacodes es mi mejor chef."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684382/inter45_at1naz.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Ella me enseña CSS, yo le enseño JavaScript, y Barbacodes nos
+                une como Git con un buen merge."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684382/inter43_wbmpzt.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Dame una chuleta de Barbacodes y conquistaré el frontend y el
+                backend."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889690/inter13q_cwlpun.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "No importa cuánto sepas, siempre hay una chuleta que te salva
+                el día."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684381/inter1532_lvs8gx.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Cada vez que me trabo en un bug, mi instinto me dice: revisa
+                Barbacodes."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684381/inter152_x8x7fk.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Si programar es un asado, Barbacodes es el chef maestro."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684381/inter48_chqz1t.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Algunos llevan un diccionario, yo siempre llevo mi chuleta de
+                Barbacodes."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684381/inter452_weliqv.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "La diferencia entre un código quemado y uno perfecto es una
+                buena chuleta de Barbacodes."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741891224/inter13ecd_cssk0a.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Si programar fuera cocinar, Barbacodes sería mi libro de
+                recetas favorito."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741684383/inter109_tdto10.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "No sé si soy desarrollador o parrillero, porque en Barbacodes
+                encuentro de todo."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889691/inter13klj_crmp7y.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Antes pasaba horas buscando soluciones, ahora solo paso por
+                Barbacodes y listo"
+              </figcaption>
+            </figure>
 
-              <figure>
-                <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889691/inter13io_ohiv5v.webp" alt="Persona hablando">
-                <figcaption>"Si las chuletas de programación fueran comida, esta web sería un buffet libre."</figcaption>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889691/inter13io_ohiv5v.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Si las chuletas de programación fueran comida, esta web sería
+                un buffet libre."
+              </figcaption>
             </figure>
             <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889689/inter13_xirsdj.webp" alt="Persona hablando">
-              <figcaption>"Entre la documentación oficial y Barbacodes, siempre elijo Barbacodes."</figcaption>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889689/inter13_xirsdj.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Entre la documentación oficial y Barbacodes, siempre elijo
+                Barbacodes."
+              </figcaption>
             </figure>
             <figure>
-              <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889689/inter13ad_hgxuyd.webp" alt="Persona hablando">
-              <figcaption>"El secreto de todo programador eficiente: una buena chuleta y mucho café."</figcaption>
-          </figure>
-          <figure>
-            <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889689/inter13g_wxfn2w.webp" alt="Persona hablando">
-            <figcaption>"Mi mente olvida cosas, pero esta web siempre las recuerda por mí."</figcaption>
-          </figure>
-          <figure>
-            <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889689/inter13k_e1nzpz.webp" alt="Persona hablando">
-            <figcaption>"Los atajos de teclado y las chuletas son los mejores amigos de un programador."</figcaption>
-          </figure>
-          <figure>
-            <img  class="figure-gallery-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889689/inter5214_xbdzwp.webp" alt="Persona hablando">
-            <figcaption>"¿Memorizar código? No, gracias. Prefiero una buena chuleta marca Barbacodes siempre a mano."</figcaption>
-          </figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889689/inter13ad_hgxuyd.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "El secreto de todo programador eficiente: una buena chuleta y
+                mucho café."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889689/inter13g_wxfn2w.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Mi mente olvida cosas, pero esta web siempre las recuerda por
+                mí."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889689/inter13k_e1nzpz.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "Los atajos de teclado y las chuletas son los mejores amigos de
+                un programador."
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                class="figure-gallery-img"
+                src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741889689/inter5214_xbdzwp.webp"
+                alt="Persona hablando"
+              />
+              <figcaption>
+                "¿Memorizar código? No, gracias. Prefiero una buena chuleta
+                marca Barbacodes siempre a mano."
+              </figcaption>
+            </figure>
           </div>
         </section>
-        <div class="ga">
-          <h3>bla</h3>
-        </div>
       </section>
       <section class="cheatsheet-page-1">
-        <h1>Nuestra selección de chuletas perfectas para CSS</h1>
-        <h4>lsdkna</h4>
-        <div class="cheat1-flex">
-          <h3>Hola</h3>
-          <div class="cheat1-flex-imgs">
-            <div class="cheat1-flex-div">
-              <a href="">
-                <img class="cheat1-flex-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741973684/cssCh_bfjrnj.webp" alt="Flex cheatsheet">
+        <h1>Nuestra mejor selección de ChuletaCSS</h1>
+        <div class="cheat1-box">
+          <h3 class="cheat1-box-title">Las mejores unidades para textos</h3>
+          <div class="cheat1-box-imgs">
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Unidades Absolutas</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Styling_basics/Values_and_units">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742081003/Unidades_absolutas_qu05pq.png" alt="Flex cheatsheet"/>
               </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Unidades Relativas</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Styling_basics/Values_and_units">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742081004/Unidades_relativas_opvlpk.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Generador de tamaños</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://www.fluid-type-scale.com/">
+                <img class="cheat1-box-img porcelain-plate herramientas-border" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742123253/Captura_de_pantalla_2025-03-16_a_las_11.07.24_pqruw5.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588e5d2158580b3e02f5b5">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742118189/uniddada_rxfnef.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
           </div>
-            <div class="cheat1-flex-div">
-              <img  class="cheat1-flex-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741973684/cssCh_bfjrnj.webp" alt="Flex cheatsheet">
+        </div>
+        <div class="cheat1-box">
+          <h3 class="cheat1-box-title">La mejor seleccion de selectores</h3>
+          <div class="cheat1-box-imgs">
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Selectores y ejemplos</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://voxelguides.com/resources/css-selector-cheat-sheet/">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742082432/w3schools-com-CSS-reference_ygbhfm.jpg" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Selectores CSS</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://es.pinterest.com/pin/52002570677651321/">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742082431/slect_cjku4p.jpg" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588fa050f0dd61d24bcd3c">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742083012/selectr_c7cxnw.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
           </div>
-            <div class="cheat1-flex-div">
-              <img class="cheat1-flex-img" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741973684/cssCh_bfjrnj.webp" alt="Flex cheatsheet">
+        </div>
+        <div class="cheat1-box">
+          <h3 class="cheat1-box-title">Pseudoclases y pseudoelementos a la brasa</h3>
+          <div class="cheat1-box-imgs">
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Muchas Pseudoclases</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://www.tutorialbrain.com/css_tutorial/css_pseudo_class/">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742083417/Captura_de_pantalla_2025-03-16_a_las_0.02.40_k9dlb2.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Estructura de Pseudoclases</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://lenguajecss.com/css/pseudoclases/estructura/">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742083388/first-last-child_yjhwkk.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Pseudoclases básicas</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://ccfprosario.com.ar/que-es-una-pseudo-clase-en-css/">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742083387/que-es-una-pseudo-clase-en-css_bnngz4.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
+              <a class="cheat1-box-a" target="_blank" href="">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742083388/selectr_ms3znp.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
           </div>
+        </div>
+        <div class="cheat1-box">
+          <h3 class="cheat1-box-title">Colores y sabores</h3>
+          <div class="cheat1-box-imgs">
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Colors RGB</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://excelatfinance.com/xlf/xlf-colors-1.php">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742121616/xlf-colindx2ws_io4yka.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Palabras clave / Hexadecimal</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://kapeli.com/cheat_sheets/CSS_Named_Colors.docset/Contents/Resources/Documents/index">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742119294/Captura_de_pantalla_2025-03-16_a_las_9.55.24_uck6g1.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Gradientes</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://uniformcss.com/cheatsheet/gradients/">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742120550/radi_xwvxvv.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Gradientes personalizados</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://codioful.com/">
+                <img class="cheat1-box-img porcelain-plate  herramientas-border" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742120937/Captura_de_pantalla_2025-03-16_a_las_10.28.49_xb3zih.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Creador de Gradientes</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://coolors.co/gradient-maker/3e196e-d46c76-ffc07c">
+                <img class="cheat1-box-img porcelain-plate  herramientas-border" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742120992/Captura_de_pantalla_2025-03-16_a_las_10.29.42_aaonbg.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588ffc2158580b3e037f5e">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742120719/Captura_de_pantalla_2025-03-16_a_las_10.25.10_rmc7ku.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cheat1-box">
+          <h3 class="cheat1-box-title">Nuestras cajas de chuletas </h3>
+          <div class="cheat1-box-imgs">
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Margins y Paddings</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=732:concepto-de-margen-y-relleno-css-diferencias-entre-margin-y-padding-css-box-model-ejemplos-cu01028d&catid=75&Itemid=203">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742122329/CU01028D_3_f2kdyj.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Positions posicionados</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742126762/CSS-Position-768x428_xqgbow.webp">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742126762/CSS-Position-768x428_xqgbow.webp" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Posicionamiento 1</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://assets-global.website-files.com/60798d9b0b61160814b3d8c3/62adb8b2d2b19c585e749884_CSS%20Positions.pdf">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742126540/Captura_de_pantalla_2025-03-16_a_las_12.02.06_stsgdc.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Posicionamiento 2</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://assets-global.website-files.com/60798d9b0b61160814b3d8c3/62adb8b2d2b19c585e749884_CSS%20Positions.pdf">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742126545/Captura_de_pantalla_2025-03-16_a_las_12.02.17_epm7lu.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Tipos de borders básicos</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://tympanus.net/codrops/css_reference/border-bottom-style/">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742122417/borderstyles1_a0fbfc.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Borders avanzados</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://www.entheosweb.com/tutorials/css-borders-tutorial/">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742122553/Captura_de_pantalla_2025-03-16_a_las_10.55.24_x1baf5.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div ">
+              <h3 class="cheat1-box-h3 ">Generador de bordes básicos</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://cssgenerator.org/border-css-generator.html">
+                <img class="cheat1-box-img porcelain-plate herramientas-border" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742122795/Captura_de_pantalla_2025-03-16_a_las_10.59.46_wplnwo.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Generador de bordes avanzados</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://bennettfeely.com/clippy/">
+                <img class="cheat1-box-img porcelain-plate  herramientas-border" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742123399/Captura_de_pantalla_2025-03-16_a_las_11.09.51_jv9lro.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/6658902950f0dd61d24bfae5">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742121947/Captura_de_pantalla_2025-03-16_a_las_10.45.38_mk6d0v.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cheat1-box">
+          <h3 class="cheat1-box-title">Las mejores unidades para textos</h3>
+          <div class="cheat1-box-imgs">
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3"></h3>
+              <a class="cheat1-box-a" target="_blank" href="">
+                <img class="cheat1-box-img porcelain-plate" src="" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3"></h3>
+              <a class="cheat1-box-a" target="_blank" href="">
+                <img class="cheat1-box-img porcelain-plate" src="" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
+              <a class="cheat1-box-a" target="_blank" href="">
+                <img class="cheat1-box-img porcelain-plate" src="" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cheat1-box">
+          <h3 class="cheat1-box-title">Las mejores unidades para textos</h3>
+          <div class="cheat1-box-imgs">
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3"></h3>
+              <a class="cheat1-box-a" target="_blank" href="">
+                <img class="cheat1-box-img porcelain-plate" src="" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3"></h3>
+              <a class="cheat1-box-a" target="_blank" href="">
+                <img class="cheat1-box-img porcelain-plate" src="" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
+              <a class="cheat1-box-a" target="_blank" href="">
+                <img class="cheat1-box-img porcelain-plate" src="" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cheat1-box">
+          <h3 class="cheat1-box-title">Las mejores unidades para textos</h3>
+          <div class="cheat1-box-imgs">
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3"></h3>
+              <a class="cheat1-box-a" target="_blank" href="">
+                <img class="cheat1-box-img porcelain-plate" src="" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3"></h3>
+              <a class="cheat1-box-a" target="_blank" href="">
+                <img class="cheat1-box-img porcelain-plate" src="" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
+              <a class="cheat1-box-a" target="_blank" href="">
+                <img class="cheat1-box-img porcelain-plate" src="" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cheat1-box">
+          <h3 class="cheat1-box-title">Nuestros platos estrella de Flexbox</h3>
+          <div class="cheat1-box-imgs">
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Flexbox Cheatsheet</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://www.reddit.com/r/webdev/comments/nvzhi0/flexbox_css_cheat_sheet/">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741973684/cssCh_bfjrnj.webp" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Flexbox Cheatsheet</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://voracious.hashnode.dev/a-practical-cheat-sheet-for-css-flexbox">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741986982/01K4Fy-o2_gribo7.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Flexbox Cheatsheet</h3>
+              <a class="cheat1-box-a" target="_blank" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741993725/flexxing_uitiwu.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cheat1-box">
+          <h3 class="cheat1-box-title">¿Cual es el cursor que vas a tomar en tu vida?</h3>
+          <div class="cheat1-box-imgs">
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Cambia tu cursor </h3>
+              <a class="cheat1-box-a" target="_blank" href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=759:cursor-css-tipos-efectos-hover-move-no-drop-resize-not-allowed-crosshair-progress-wait-cu01054d&catid=75&Itemid=203">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742047449/CU01054D_1_scyz90.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Crea un cursor</h3>
+              <a class="cheat1-box-a" href="https://www.cursor.cc/">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742080370/cursores_m6rzjm.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Ejemplos en Codepen</h3>
+              <a class="cheat1-box-a" href="https://codepen.io/oooggg/pen/dLQzBN">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742081715/Curss_vnchha.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
           </div>
         </div>
       </section>
       <section class="cheatsheet-page-2">2</section>
       <section class="cheatsheet-page-3">3</section>
     </main>
-
     <footer class="barbacodes-footer">
       <div class="footer-content">
-        <p>🔥 En Barbacodes servimos las mejores chuletas de programación. Aunque sean frescas, muchas provienen de otras fuentes confiables. 🔥</p>
-        <p>📜 Puedes encontrar los enlaces a todas ellas pulsando sobre las imágenes.</p>
+        <p>
+          🔥 En Barbacodes servimos las mejores chuletas de programación. Aunque
+          sean frescas, muchas provienen de otras fuentes confiables. 🔥
+        </p>
+        <p>
+          📜 Puedes encontrar los enlaces a todas ellas pulsando sobre las
+          imágenes.
+        </p>
       </div>
     </footer>
-    
 
     <script>
       function toggleMenu() {
