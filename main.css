@@ -51,8 +51,8 @@
 }
 .main-page-gallery1 {
   backdrop-filter: hue-rotate(50deg);
-  margin-top: calc(150px + 20vw);
-  padding: 100px 50px;
+  margin-top: calc(250px + 20vw);
+  padding: 100px 0px;
   display: flex;
   gap: 2%;
   flex-wrap: wrap;
