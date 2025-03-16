@@ -59,7 +59,9 @@ padding: 0px;
     border: 4px dashed var(--my-light-orange);
   }
   .cheat1-box-div:hover {
-    pointer-events: none;
+    scale: 1; /* No cambia el tamaño */
+    z-index: auto; /* Evita que se superponga */
+    animation: none; /* Elimina la animación */
   }
   .cheat1-box-h3 {
     top: 0%;

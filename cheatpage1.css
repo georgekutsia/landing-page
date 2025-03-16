@@ -77,13 +77,12 @@
   position: relative;
   z-index: 1;
   cursor: alias;
+  object-fit: cover;
 }
 
 .cheat1-box-div:hover {
   scale: 1.8;
   z-index: 50;
-}
-.cheat1-box-div:hover {
   /* Despuésd e aumentar un poco, aumenta aún mas el hover. no sé. quería hacerlo */
   animation: growMore 1s ease-in-out 3s forwards;
 }
