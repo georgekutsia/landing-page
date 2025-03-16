@@ -160,7 +160,6 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  grid-template-rows: repeat(9, 1fr);
   gap: 5vh;
   padding: 0px 5vw;
   figure {

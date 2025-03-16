@@ -9,7 +9,19 @@
     text-shadow: 0px 0px 10px black;
   }
 }
-
+.navigation-css{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: 20px;
+  margin: 0px 20vw;
+  gap: 20px;
+  backdrop-filter: blur(5px);
+  padding: 10px;
+  a{
+    cursor: pointer;
+  }
+}
 .cheat1-box {
   display: flex;
   flex-direction: column;
