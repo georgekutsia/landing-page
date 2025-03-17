@@ -111,3 +111,7 @@
 .herramientas-border{
   border: 8px dashed var(--my-light-orange);
 }
+.cheat1-box-span{
+  font-style: italic;
+  color: var(--my-light-orange);
+}
