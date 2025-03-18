@@ -8,6 +8,14 @@
     transform: translateY(20px);
     scale: 4;
   }
+
+}
+@media screen and (min-width: 725px) {
+  .cheat1-box-div:hover {
+    scale: 1.8;
+    z-index: 50;  /* Despuésd e aumentar un poco, aumenta aún mas el hover. no sé. quería hacerlo */
+    animation: growMore 1s ease-in-out 3s forwards;
+  }
 }
 
 @media screen and (max-width: 820px) {
@@ -23,13 +31,17 @@
     overflow: hidden;
     width: 100vw;
   }
-  /* .main-page{
-width: 100%;
-margin-left: 30px;
-padding: 0px;
-  } */
 }
 
+@media screen and (max-width: 695px) {
+  #navbars{
+    display: block;
+    }
+    .main-nav-ul {
+      display: none;
+    }
+
+}
 @media screen and (max-width: 395px) {
   body {
     background-color: rgb(159, 159, 225);
@@ -52,6 +64,9 @@ padding: 0px;
     width: 98vw;
     border-radius: 3%;
   }
+  .cheat1-box-div{
+    margin-top: 50px;
+  }
   .porcelain-plate {
     border: 4px dashed var(--my-light-grey);
   }
@@ -59,9 +74,9 @@ padding: 0px;
     border: 4px dashed var(--my-light-orange);
   }
   .cheat1-box-div:hover {
-    scale: 1; /* No cambia el tamaño */
-    z-index: auto; /* Evita que se superponga */
-    animation: none; /* Elimina la animación */
+    scale: 1; 
+    z-index: auto; 
+    animation: none; 
   }
   .cheat1-box-h3 {
     top: 0%;

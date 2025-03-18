@@ -1,8 +1,29 @@
 nav {
   background: hsla(51, 100%, 48%, 1);
-  background: linear-gradient(90deg, hsla(51, 100%, 48%, 1) 0%, hsla(48, 100%, 44%, 1) 18%, hsla(48, 85%, 43%, 1) 47%, hsla(48, 100%, 44%, 1) 77%, hsla(51, 100%, 48%, 1) 100%);
-  background: -moz-linear-gradient(90deg, hsla(51, 100%, 48%, 1) 0%, hsla(48, 100%, 44%, 1) 18%, hsla(48, 85%, 43%, 1) 47%, hsla(48, 100%, 44%, 1) 77%, hsla(51, 100%, 48%, 1) 100%);
-  background: -webkit-linear-gradient(90deg, hsla(51, 100%, 48%, 1) 0%, hsla(48, 100%, 44%, 1) 18%, hsla(48, 85%, 43%, 1) 47%, hsla(48, 100%, 44%, 1) 77%, hsla(51, 100%, 48%, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    hsla(51, 100%, 48%, 1) 0%,
+    hsla(48, 100%, 44%, 1) 18%,
+    hsla(48, 85%, 43%, 1) 47%,
+    hsla(48, 100%, 44%, 1) 77%,
+    hsla(51, 100%, 48%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(51, 100%, 48%, 1) 0%,
+    hsla(48, 100%, 44%, 1) 18%,
+    hsla(48, 85%, 43%, 1) 47%,
+    hsla(48, 100%, 44%, 1) 77%,
+    hsla(51, 100%, 48%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(51, 100%, 48%, 1) 0%,
+    hsla(48, 100%, 44%, 1) 18%,
+    hsla(48, 85%, 43%, 1) 47%,
+    hsla(48, 100%, 44%, 1) 77%,
+    hsla(51, 100%, 48%, 1) 100%
+  );
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,19 +33,17 @@ nav {
   transform: translateX(-50%);
   width: 90vw;
   z-index: 100;
-  
   color: var(--my-textBlack);
-  label{
-      color: var(--my-textBlack);
-      z-index: 3;
+  label {
+    color: var(--my-textBlack);
+    z-index: 3;
   }
 }
 
 nav h3 {
-  font-family: "Wallpoet", sans-serif;
+  font-family: 'Wallpoet', sans-serif;
   font-size: calc(12px + 1.5vw);
   color: var(--my-textBlack);
-
 }
 
 .main-nav-img {
@@ -33,7 +52,6 @@ nav h3 {
   transition: 0.9s ease-in-out;
   cursor: pointer;
 }
-
 
 .main-nav-ul {
   display: flex;
@@ -73,7 +91,6 @@ nav h3 {
 }
 .fire-nav-container-2 {
   margin-left: 2vw;
-
 }
 .fire-nav-container-3 {
   margin-left: 0.4vw;
@@ -83,7 +100,6 @@ nav h3 {
 .fire-nav-container-0 {
   display: none;
   z-index: -1;
-
 }
 
 /* 🔥 Mostrar el fuego correspondiente cuando se selecciona un radio */
@@ -109,7 +125,7 @@ nav h3 {
   display: none;
 }
 
-#main-page:checked ~ main .main-page{
+#main-page:checked ~ main .main-page {
   display: block;
   animation: fadeIn 0.3s ease-in-out;
 }
@@ -127,4 +143,82 @@ nav h3 {
 #js-grill:checked ~ main .cheatsheet-page-3 {
   display: block;
   animation: fadeIn 0.3s ease-in-out;
+}
+
+#navbars {
+  display: none;
+  margin-right: 50px;
+  font-size: calc(16px + 1.5vw);
+}
+
+.menu-container {
+  display: inline-block;
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  padding: 20px 0px;
+  margin: 0;
+  background: #f4f4f4;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  border-radius: 30px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0);
+  position: absolute;
+  justify-content: center;
+  font-size: calc(16px + 0.3vw);
+}
+
+.menu div li {
+  padding: 1px 3px;
+  border-bottom: 1px solid #ccc;
+  min-width: 150px;
+  text-align: center;
+}
+.menu div {
+  border-right: 5px solid rgba(0, 0, 0, 0.315);
+}
+.menu li a {
+  color: black;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu-toggle:checked + .menu {
+  display: flex;
+}
+
+.menu-book {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: calc(24px + 0.5vw);
+}
+
+.list-title {
+  color: black;
+  border-bottom: none;
+  font-size: calc(24px + 0.5vw);
 }
