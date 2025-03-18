@@ -166,6 +166,7 @@ nav h3 {
   padding: 10px;
   border: 2px solid black;
   border-radius: 5px;
+  margin-left: 50%;
 }
 
 .menu-toggle {
@@ -221,4 +222,34 @@ nav h3 {
   color: black;
   border-bottom: none;
   font-size: calc(24px + 0.5vw);
+}
+
+.close-minimenu{
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  font-size: calc(24px + 0.5vw);
+text-shadow: 1px 2px 4px rgb(203, 113, 113);
+padding: 3px;
+}
+.close-minimenu:hover{
+box-shadow: 1px 2px 4px black;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.h-title{
+  background-color: var(--my-light-blue);
+}
+
+.c-title{
+  background-color: var(--my-light-yellow);
+}
+
+.j-title{
+  background-color: var(--my-light-green);
+}
+.a-all{
+  background-color: var(--my-light-red);
+
 }

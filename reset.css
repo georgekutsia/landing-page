@@ -20,7 +20,10 @@
   --my-darkBlue: rgb(4, 46, 75);
   --my-blue: #0585da;
   --my-blue: #0585da;
-  --my-light-blue: #71a3c5;
+  --my-light-blue: #d7e5ee;
+  --my-light-yellow: #eceed7;
+  --my-light-green: #dbeed7;
+  --my-light-red: #e5dbd5;
 }
 
 * {
