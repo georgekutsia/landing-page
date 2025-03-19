@@ -42,8 +42,9 @@ nav {
 
 nav h3 {
   font-family: 'Wallpoet', sans-serif;
-  font-size: calc(12px + 1.5vw);
+  font-size: calc(14px + 1.2vw);
   color: var(--my-textBlack);
+  text-shadow: 1px 1px var(--my-orange);
 }
 
 .main-nav-img {
@@ -57,11 +58,16 @@ nav h3 {
   display: flex;
   gap: 1vw;
   font-size: calc(12px + 0.5vw);
+  margin-right: 100px;
 }
 
 .nav-parts {
   width: 28%;
   text-align: center;
+  li{
+    border-right: 1px solid var(--my-textBlack);
+    padding-right: 3px;
+  }
 }
 
 /* 🔥 Configuración base para los contenedores de fuego */
@@ -75,7 +81,8 @@ nav h3 {
 
 .fire-nav-container-1,
 .fire-nav-container-2,
-.fire-nav-container-3 {
+.fire-nav-container-3,
+.fire-nav-container-4 {
   width: 100px;
   height: 10px;
   position: absolute;
@@ -83,9 +90,9 @@ nav h3 {
   opacity: 0;
   display: none;
   transition: opacity 0.3s ease-in-out;
+  
 }
 
-/* 🔥 Ajuste de posición de cada fuego */
 .fire-nav-container-1 {
   margin-left: 0.5vw;
 }
@@ -95,11 +102,14 @@ nav h3 {
 .fire-nav-container-3 {
   margin-left: 0.4vw;
 }
+.fire-nav-container-4 {
+  margin-left: 2vw;
+}
 
 /* 🔥 Por defecto, los fuegos están ocultos */
 .fire-nav-container-0 {
-  display: none;
   z-index: -1;
+  display: none;
 }
 
 /* 🔥 Mostrar el fuego correspondiente cuando se selecciona un radio */
@@ -117,12 +127,19 @@ nav h3 {
   display: block;
   opacity: 1;
 }
+#condiments:checked ~ header nav .fire-nav-container-4 {
+  display: block;
+  opacity: 1;
+}
 
 .main-page,
 .cheatsheet-page-1,
 .cheatsheet-page-2,
-.cheatsheet-page-3 {
+.cheatsheet-page-3,
+.cheatsheet-page-4 {
   display: none;
+  min-height: 90vh;
+  padding-top: 100px;
 }
 
 #main-page:checked ~ main .main-page {
@@ -144,11 +161,16 @@ nav h3 {
   display: block;
   animation: fadeIn 0.3s ease-in-out;
 }
+#condiments:checked ~ main .cheatsheet-page-4 {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
 
 #navbars {
   display: none;
   margin-right: 50px;
   font-size: calc(16px + 1.5vw);
+  
 }
 
 .menu-container {
@@ -161,12 +183,14 @@ nav h3 {
 }
 
 .menu-icon {
-  font-size: 24px;
+  font-size: calc(24px + 1vw);
   cursor: pointer;
   padding: 10px;
-  border: 2px solid black;
-  border-radius: 5px;
   margin-left: 50%;
+  i{
+    color: var(--my-textBlack);
+    text-shadow: 1px 1px var(--my-orange);
+  }
 }
 
 .menu-toggle {
@@ -177,7 +201,7 @@ nav h3 {
   list-style: none;
   padding: 20px 0px;
   margin: 0;
-  background: #f4f4f4;
+  background: var(--my-textWhite);
   position: absolute;
   top: 40px;
   left: 50%;
@@ -216,6 +240,10 @@ nav h3 {
   top: 10px;
   right: 20px;
   font-size: calc(24px + 0.5vw);
+  i{
+    color: var(--my-textBlack);
+    text-shadow: 1px 1px var(--my-orange);
+  }
 }
 
 .list-title {

@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="cheatpage1.css" />
     <link rel="stylesheet" href="cheatpage2.css" />
     <link rel="stylesheet" href="cheatpage3.css" />
+    <link rel="stylesheet" href="condiments.css" />
     <link rel="stylesheet" href="responsive.css" />
     <script src="script.js" defer></script>
     <title>Barbacodes</title>
@@ -37,9 +38,10 @@
   <body>
     <!-- Inputs radio para activar fuego y secciones -->
     <input type="radio" id="main-page" name="fire-selector" hidden />
-    <input type="radio" id="bbq-ss" name="fire-selector" hidden checked />
+    <input type="radio" id="bbq-ss" name="fire-selector" hidden checked/>
     <input type="radio" id="html-parrilla" name="fire-selector" hidden />
     <input type="radio" id="js-grill" name="fire-selector" hidden />
+    <input type="radio" id="condiments" name="fire-selector"  hidden />
 
     <header>
       <nav>
@@ -126,6 +128,28 @@
               </div>
             </div>
           </li>
+          <li>
+            <label for="condiments">Condimentos</label>
+            <div class="fire-nav-container-0 fire-nav-container-4">
+              <div class="fire">
+                <div class="fire-left">
+                  <div class="main-fire"></div>
+                  <div class="particle-fire"></div>
+                </div>
+                <div class="fire-center">
+                  <div class="main-fire"></div>
+                  <div class="particle-fire"></div>
+                </div>
+                <div class="fire-right">
+                  <div class="main-fire"></div>
+                  <div class="particle-fire"></div>
+                </div>
+                <div class="fire-bottom">
+                  <div class="main-fire"></div>
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
         <div class="menu-container" id="navbars" >
           <label for="menu-toggle" class="menu-icon">
@@ -134,9 +158,13 @@
           <input type="checkbox" id="menu-toggle" class="menu-toggle">
           <ul class="menu">
             <div>
+              <label for="menu-toggle" class="close-minimenu">
+                <h3>x</h3>
+            </label>
               <li for="html-parrilla"><label for="bbq-ss">BBQ-SS</label></li>
               <li for="html-parrilla"><label for="html-parrilla">HTML-Parrilla</label></li>
               <li for="html-parrilla"><label for="js-grill">JS Grill</label></li>
+              <li for="html-parrilla"><label for="condiments">Condimentos</label></li>
             </div>
             </ul>
           </div>
@@ -693,25 +721,25 @@
           <div class="cheat1-box-imgs">
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Unidades Absolutas</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Styling_basics/Values_and_units">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Styling_basics/Values_and_units">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742081003/Unidades_absolutas_qu05pq.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Unidades Relativas</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Styling_basics/Values_and_units">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Styling_basics/Values_and_units">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742081004/Unidades_relativas_opvlpk.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Generador de tamaños</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://www.fluid-type-scale.com/">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://www.fluid-type-scale.com/">
                 <img class="cheat1-box-img porcelain-plate herramientas-border" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742123253/Captura_de_pantalla_2025-03-16_a_las_11.07.24_pqruw5.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588e5d2158580b3e02f5b5">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588e5d2158580b3e02f5b5">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742118189/uniddada_rxfnef.png" alt="Flex cheatsheet"/>
               </a>
             </div>
@@ -722,19 +750,19 @@
           <div class="cheat1-box-imgs">
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Selectores y ejemplos</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://voxelguides.com/resources/css-selector-cheat-sheet/">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://voxelguides.com/resources/css-selector-cheat-sheet/">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742082432/w3schools-com-CSS-reference_ygbhfm.jpg" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Selectores CSS</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://es.pinterest.com/pin/52002570677651321/">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://es.pinterest.com/pin/52002570677651321/">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742082431/slect_cjku4p.jpg" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588fa050f0dd61d24bcd3c">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588fa050f0dd61d24bcd3c">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742083012/selectr_c7cxnw.png" alt="Flex cheatsheet"/>
               </a>
             </div>
@@ -745,25 +773,25 @@
           <div class="cheat1-box-imgs">
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Muchas Pseudoclases</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://www.tutorialbrain.com/css_tutorial/css_pseudo_class/">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://www.tutorialbrain.com/css_tutorial/css_pseudo_class/">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742083417/Captura_de_pantalla_2025-03-16_a_las_0.02.40_k9dlb2.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Estructura de Pseudoclases</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://lenguajecss.com/css/pseudoclases/estructura/">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://lenguajecss.com/css/pseudoclases/estructura/">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742083388/first-last-child_yjhwkk.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Pseudoclases básicas</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://ccfprosario.com.ar/que-es-una-pseudo-clase-en-css/">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://ccfprosario.com.ar/que-es-una-pseudo-clase-en-css/">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742083387/que-es-una-pseudo-clase-en-css_bnngz4.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
-              <a class="cheat1-box-a" target="_blank" href="">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742083388/selectr_ms3znp.png" alt="Flex cheatsheet"/>
               </a>
             </div>
@@ -774,37 +802,37 @@
           <div class="cheat1-box-imgs">
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Colors RGB</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://excelatfinance.com/xlf/xlf-colors-1.php">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://excelatfinance.com/xlf/xlf-colors-1.php">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742121616/xlf-colindx2ws_io4yka.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Palabras clave / Hexadecimal</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://kapeli.com/cheat_sheets/CSS_Named_Colors.docset/Contents/Resources/Documents/index">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://kapeli.com/cheat_sheets/CSS_Named_Colors.docset/Contents/Resources/Documents/index">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742119294/Captura_de_pantalla_2025-03-16_a_las_9.55.24_uck6g1.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Gradientes</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://uniformcss.com/cheatsheet/gradients/">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://uniformcss.com/cheatsheet/gradients/">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742120550/radi_xwvxvv.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Gradientes personalizados</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://codioful.com/">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://codioful.com/">
                 <img class="cheat1-box-img porcelain-plate  herramientas-border" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742120937/Captura_de_pantalla_2025-03-16_a_las_10.28.49_xb3zih.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Creador de Gradientes</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://coolors.co/gradient-maker/3e196e-d46c76-ffc07c">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://coolors.co/gradient-maker/3e196e-d46c76-ffc07c">
                 <img class="cheat1-box-img porcelain-plate  herramientas-border" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742120992/Captura_de_pantalla_2025-03-16_a_las_10.29.42_aaonbg.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588ffc2158580b3e037f5e">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588ffc2158580b3e037f5e">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742120719/Captura_de_pantalla_2025-03-16_a_las_10.25.10_rmc7ku.png" alt="Flex cheatsheet"/>
               </a>
             </div>
@@ -815,55 +843,55 @@
           <div class="cheat1-box-imgs">
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Margins y Paddings</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=732:concepto-de-margen-y-relleno-css-diferencias-entre-margin-y-padding-css-box-model-ejemplos-cu01028d&catid=75&Itemid=203">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=732:concepto-de-margen-y-relleno-css-diferencias-entre-margin-y-padding-css-box-model-ejemplos-cu01028d&catid=75&Itemid=203">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742122329/CU01028D_3_f2kdyj.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Positions posicionados</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742126762/CSS-Position-768x428_xqgbow.webp">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742126762/CSS-Position-768x428_xqgbow.webp">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742126762/CSS-Position-768x428_xqgbow.webp" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Posicionamiento 1</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://assets-global.website-files.com/60798d9b0b61160814b3d8c3/62adb8b2d2b19c585e749884_CSS%20Positions.pdf">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://assets-global.website-files.com/60798d9b0b61160814b3d8c3/62adb8b2d2b19c585e749884_CSS%20Positions.pdf">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742126540/Captura_de_pantalla_2025-03-16_a_las_12.02.06_stsgdc.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Posicionamiento 2</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://assets-global.website-files.com/60798d9b0b61160814b3d8c3/62adb8b2d2b19c585e749884_CSS%20Positions.pdf">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://assets-global.website-files.com/60798d9b0b61160814b3d8c3/62adb8b2d2b19c585e749884_CSS%20Positions.pdf">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742126545/Captura_de_pantalla_2025-03-16_a_las_12.02.17_epm7lu.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Tipos de borders básicos</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://tympanus.net/codrops/css_reference/border-bottom-style/">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://tympanus.net/codrops/css_reference/border-bottom-style/">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742122417/borderstyles1_a0fbfc.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Borders avanzados</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://www.entheosweb.com/tutorials/css-borders-tutorial/">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://www.entheosweb.com/tutorials/css-borders-tutorial/">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742122553/Captura_de_pantalla_2025-03-16_a_las_10.55.24_x1baf5.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div ">
               <h3 class="cheat1-box-h3 ">Generador de bordes básicos</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://cssgenerator.org/border-css-generator.html">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://cssgenerator.org/border-css-generator.html">
                 <img class="cheat1-box-img porcelain-plate herramientas-border" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742122795/Captura_de_pantalla_2025-03-16_a_las_10.59.46_wplnwo.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Generador de bordes avanzados</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://bennettfeely.com/clippy/">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://bennettfeely.com/clippy/">
                 <img class="cheat1-box-img porcelain-plate  herramientas-border" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742123399/Captura_de_pantalla_2025-03-16_a_las_11.09.51_jv9lro.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/6658902950f0dd61d24bfae5">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/6658902950f0dd61d24bfae5">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742121947/Captura_de_pantalla_2025-03-16_a_las_10.45.38_mk6d0v.png" alt="Flex cheatsheet"/>
               </a>
             </div>
@@ -874,19 +902,19 @@
           <div class="cheat1-box-imgs">
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Truco con variables</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://diamantidis.github.io/tips/2020/06/17/css-variables">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://diamantidis.github.io/tips/2020/06/17/css-variables">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742162545/Captura_de_pantalla_2025-03-16_a_las_22.01.53_dl7vgm.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Variables en CSS</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://parzibyte.me/blog/2019/09/26/variables-css-var-tutorial-ejemplos/">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://parzibyte.me/blog/2019/09/26/variables-css-var-tutorial-ejemplos/">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742162761/Tutorial-de-Variables-CSS-con-var_v5k5kg.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/6658900883620a15cb1d14b8">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/6658900883620a15cb1d14b8">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742162139/Captura_de_pantalla_2025-03-16_a_las_21.54.55_ngntql.png" alt="Flex cheatsheet"/>
               </a>
             </div>
@@ -897,7 +925,7 @@
           <div class="cheat1-box-imgs">
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3" id="background">Backgrounds</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://www.w3schools.com/cssref/css3_pr_background.php">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://www.w3schools.com/cssref/css3_pr_background.php">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742164514/Captura_de_pantalla_2025-03-16_a_las_22.34.57_ddpxhh.png" alt="Flex cheatsheet"/>
               </a>
             </div>
@@ -909,13 +937,12 @@
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588feb1cacdd61df7c94e2">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588feb1cacdd61df7c94e2">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742214697/Captura_de_pantalla_2025-03-17_a_las_12.31.20_pmrnar.png" alt="Flex cheatsheet"/>
               </a>
             </div>
           </div>
         </div>
-
         <div class="cheat1-box">
           <h3 class="cheat1-box-title" id="fuentes">¿Nuestras fuentes?</h3>
           <div class="cheat1-box-imgs">
@@ -927,7 +954,7 @@
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588fd283620a15cb1d051f">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588fd283620a15cb1d051f">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742212738/Captura_de_pantalla_2025-03-17_a_las_11.58.48_r2cslm.png" alt="Flex cheatsheet"/>
               </a>
             </div>
@@ -938,25 +965,25 @@
           <div class="cheat1-box-imgs">
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Flex / Inline-flex / Grid</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwjhzpqq9dsx7whf1vp1z.png">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwjhzpqq9dsx7whf1vp1z.png">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742215075/Captura_de_pantalla_2025-03-17_a_las_12.36.14_w3g1a0.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Inline-grid / none /Inherit </h3>
-              <a class="cheat1-box-a" target="_blank" href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwjhzpqq9dsx7whf1vp1z.png">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwjhzpqq9dsx7whf1vp1z.png">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742215076/Captura_de_pantalla_2025-03-17_a_las_12.36.21_hcweiw.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Block/ Inline / Inline-block</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwjhzpqq9dsx7whf1vp1z.png">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwjhzpqq9dsx7whf1vp1z.png">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742215078/Captura_de_pantalla_2025-03-17_a_las_12.36.03_n00vez.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588fb883620a15cb1cfd83">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588fb883620a15cb1cfd83">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742215598/Captura_de_pantalla_2025-03-17_a_las_12.46.22_pzvqnn.png" alt="Flex cheatsheet"/>
               </a>
             </div>
@@ -967,13 +994,13 @@
           <div class="cheat1-box-imgs">
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3"> @media responsive</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://www.codeply.com/responsive-design-cheatsheet.html">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://www.codeply.com/responsive-design-cheatsheet.html">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742216273/Captura_de_pantalla_2025-03-17_a_las_12.52.35_t2fwik.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588f9b83620a15cb1cf583">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588f9b83620a15cb1cf583">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742239019/Captura_de_pantalla_2025-03-17_a_las_19.16.17_dpmuzm.png" alt="Flex cheatsheet"/>
               </a>
             </div>
@@ -984,25 +1011,25 @@
           <div class="cheat1-box-imgs">
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">  Box Shadow</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://www.arsys.es/blog/sombras-css">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://www.arsys.es/blog/sombras-css">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742240218/Captura_de_pantalla_2025-03-17_a_las_19.24.32_d1nfsl.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Ejemplos Box Shadow</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://tympanus.net/codrops/css_reference/box-shadow/">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://tympanus.net/codrops/css_reference/box-shadow/">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742240213/boxshadowstyles_tz01dv.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Generador de sombras</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://www.cssmatic.com/es/box-shadow">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://www.cssmatic.com/es/box-shadow">
                 <img class="cheat1-box-img porcelain-plate herramientas-border" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742240214/Captura_de_pantalla_2025-03-17_a_las_19.18.44_ptiivw.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588f7e1cacdd61df7c76e5">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588f7e1cacdd61df7c76e5">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742241942/Captura_de_pantalla_2025-03-17_a_las_20.05.31_ooewt1.png" alt="Flex cheatsheet"/>
               </a>
             </div>
@@ -1013,13 +1040,13 @@
           <div class="cheat1-box-imgs">
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3"> Animaciones</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://learntheweb.courses/topics/css-animations-effects-cheat-sheet/">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://learntheweb.courses/topics/css-animations-effects-cheat-sheet/">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742243161/Captura_de_pantalla_2025-03-17_a_las_20.13.23_gmjv9a.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588f7e1cacdd61df7c76e5">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588f7e1cacdd61df7c76e5">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742243715/Captura_de_pantalla_2025-03-17_a_las_20.35.04_lbcwph.png" alt="Flex cheatsheet"/>
               </a>
             </div>
@@ -1029,52 +1056,91 @@
           <h3 class="cheat1-box-title" id="filtrer">Filtramos por las mejores chuletas</h3>
           <div class="cheat1-box-imgs">
             <div class="cheat1-box-div">
-              <h3 class="cheat1-box-h3"> Filtros </h3>
-              <a class="cheat1-box-a" target="_blank" href="https://pbs.twimg.com/media/E_F_sceX0AwyESm.jpg:large">
+              <h3 class="cheat1-box-h3" id="filter"> Filtros </h3>
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://pbs.twimg.com/media/E_F_sceX0AwyESm.jpg:large">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742245150/Captura_de_pantalla_2025-03-17_a_las_20.58.55_lczeix.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Y más filtros  </h3>
-              <a class="cheat1-box-a" target="_blank" href="https://zurb.com/blog/endless-possibilities-with-photo-filters-">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://zurb.com/blog/endless-possibilities-with-photo-filters-">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742245071/photo_mgmh5l.webp" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3"> Generador de filtros</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://cssgenerator.org/filter-css-generator.html">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://cssgenerator.org/filter-css-generator.html">
                 <img class="cheat1-box-img porcelain-plate herramientas-border"" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742250022/Captura_de_pantalla_2025-03-17_a_las_22.20.10_pdzbyr.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588f612158580b3e03547d">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588f612158580b3e03547d">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742243904/Captura_de_pantalla_2025-03-17_a_las_20.38.13_etffwj.png" alt="Flex cheatsheet"/>
               </a>
             </div>
           </div>
         </div>
-        
-                <!-- por aqui -->
         <div class="cheat1-box">
           <h3 class="cheat1-box-title" id="flexbos">Nuestros platos estrella de Flexbox</h3>
           <div class="cheat1-box-imgs">
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Flexbox Cheatsheet</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://www.reddit.com/r/webdev/comments/nvzhi0/flexbox_css_cheat_sheet/">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://www.reddit.com/r/webdev/comments/nvzhi0/flexbox_css_cheat_sheet/">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741973684/cssCh_bfjrnj.webp" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Flexbox Cheatsheet</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://voracious.hashnode.dev/a-practical-cheat-sheet-for-css-flexbox">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://voracious.hashnode.dev/a-practical-cheat-sheet-for-css-flexbox">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741986982/01K4Fy-o2_gribo7.png" alt="Flex cheatsheet"/>
               </a>
             </div>
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Flexbox Cheatsheet</h3>
-              <a class="cheat1-box-a" target="_blank" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
-                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741993725/flexxing_uitiwu.png" alt="Flex cheatsheet"/>
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+                <img class="cheat1-box-img porcelain-plate " src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1741993725/flexxing_uitiwu.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588f112158580b3e033990">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742411069/Captura_de_pantalla_2025-03-19_a_las_19.04.19_jfneu7.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cheat1-box">
+          <h3 class="cheat1-box-title" id="flexbos">Deléitate con las chuletas en el Grill</h3>
+          <div class="cheat1-box-imgs">
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Grid Cheatsheet</h3>
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://dev.to/simonpaix/css-grid-cheat-sheet-2ll8">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742409899/grid-cheatsheet_wbiura.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Grid Cheatsheet</h3>
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://github.com/youneslaaroussi/css-docs?tab=readme-ov-file">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742409896/css_grid_xczwdc.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Generador de Grid</h3>
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://alialaa.github.io/css-grid-cheat-sheet/">
+                <img class="cheat1-box-img porcelain-plate herramientas-border" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742409888/Captura_de_pantalla_2025-03-19_a_las_18.40.55_g9y8ob.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Crea grids a gusto</h3>
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://gridbyexample.com/examples/">
+                <img class="cheat1-box-img porcelain-plate herramientas-border" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742409890/Captura_de_pantalla_2025-03-19_a_las_18.44.08_febuaz.png" alt="Flex cheatsheet"/>
+              </a>
+            </div>
+            <div class="cheat1-box-div">
+              <h3 class="cheat1-box-h3">Lección en thePower / Ciberseguridad</h3>
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://app.thepowermba.com/programs/6603ebb74f782e7336d03eca/modules/6634bc2aa75f262ef3c73ec1/lessons/6634c3663c6c0d2eeba88dba/microlearnings/66588ebf50f0dd61d24b9353">
+                <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742409897/Captura_de_pantalla_2025-03-19_a_las_18.36.54_czpe07.png" alt="Flex cheatsheet"/>
               </a>
             </div>
           </div>
@@ -1084,7 +1150,7 @@
           <div class="cheat1-box-imgs">
             <div class="cheat1-box-div">
               <h3 class="cheat1-box-h3">Cambia tu cursor </h3>
-              <a class="cheat1-box-a" target="_blank" href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=759:cursor-css-tipos-efectos-hover-move-no-drop-resize-not-allowed-crosshair-progress-wait-cu01054d&catid=75&Itemid=203">
+              <a class="cheat1-box-a" target="_blank" rel="noopener" href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=759:cursor-css-tipos-efectos-hover-move-no-drop-resize-not-allowed-crosshair-progress-wait-cu01054d&catid=75&Itemid=203">
                 <img class="cheat1-box-img porcelain-plate" src="https://res.cloudinary.com/dtv1oj9bq/image/upload/v1742047449/CU01054D_1_scyz90.png" alt="Flex cheatsheet"/>
               </a>
             </div>
@@ -1103,8 +1169,80 @@
           </div>
         </div>
       </section>
-      <section class="cheatsheet-page-2">2</section>
-      <section class="cheatsheet-page-3">3</section>
+      <section class="cheatsheet-page-2">
+        <div class="loader-gear"></div> 
+        <h2>Estoy en ello...</h2>
+      </section>
+      <section class="cheatsheet-page-3">
+        <div class="loader-gear"></div> 
+        <h2>Paciencia que tengo vida...</h2>
+      </section>
+      <section class="cheatsheet-page-4">
+          <h2>Condmienta tus proyectos </h2>
+          <article class="article-condiments">
+            <h3>Fuentes</h3>
+            <p><span>Fluid Type Scale</span> -> Gracias a la función clamp nos permite tener variables con tamaños ajustables a la resolución de la pantalla <a href="https://www.fluid-type-scale.com/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span>Google Fonts</span> -> Una librería de fuentes gratuitas de Google, también incluye iconos <a href="https://fonts.google.com/knowledge" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span>Font Joy</span> -> Genera pares de fuentes<a href="https://fontjoy.com/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+          </article>
+          <article class="article-condiments">
+            <h3>Colores</h3>
+            <p><span>Huemint </span> -> Generador de paletas para cualquier tipo de aplicación<a href="https://huemint.com/website-magazine/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span> HappyHues</span> -> Generador de paletas para cualquier tipo de aplicación<a href="https://www.happyhues.co/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span> CSS Gradient</span> -> Generador de gradientes<a href="https://cssgradient.io/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span> RandomA11y</span> -> Generador de paletas de colores accesibles<a href="https://randoma11y.com/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+          </article>
+          <article class="article-condiments">
+            <h3>Iconos</h3>
+            <div class="condiments-display-flex">
+              <p><span> Flaticon</span><a href="https://www.flaticon.es/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+              <p><span> Iconos8</span><a href="https://iconos8.es/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+              <p><span> Fontawesome</span>  <a href="https://fontawesome.com/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+              <p><span> Google Fonts</span>  <a href="https://fonts.google.com/icons" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            </div>
+          </article>
+          <article class="article-condiments">
+            <h3>Fondos</h3>
+            <p><span> Transparent Textures</span> -> Fondos transparentes<a href="https://www.transparenttextures.com/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span> The Pattern Library</span> -> Patrones de fondo<a href="http://thepatternlibrary.com/#dark-wood" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+          </article>
+          <article class="article-condiments">
+            <h3>Herramientas</h3>
+            <p><span> Clippy</span> -> Generador de clip-path<a href="https://bennettfeely.com/clippy/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span> CSSMatic</span> -> Generador de sombras<a href="https://www.cssmatic.com/box-shadow" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+          </article>
+          <article class="article-condiments">
+            <h3>Flex</h3>
+            <p><span>CSS Tricks </span> ->Guía de Flexbox con ejemplos visuales <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span>Flex Cheatsheet </span> ->Guia rápida de Flexbox <a href="https://yoksel.github.io/flex-cheatsheet/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span> Flexbox Froggy</span> -> Juego de la rana para practicar Flexbox<a href="https://flexboxfroggy.com/#es" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span> Flexbox Adventure </span> -> Juego del caballero medieval para practicar Flexbox<a href="https://codingfantasy.com/games/flexboxadventure" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+          </article>
+          <article class="article-condiments">
+            <h3>Grid</h3>
+            <p><span>CSS Garden </span> -> Juego de jardinero para practicar Grid<a href="https://cssgridgarden.com/#es" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span>Css Grid Attack </span> -> Juego de lucha para practicar Grid<a href="https://codingfantasy.com/games/css-grid-attack" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+          </article>
+          <article class="article-condiments">
+            <h3>Responsive</h3>
+            <p>Colección de medias queries más utilizadas:<a href="https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span> AmIResponsive</span> -> Test visual del responsive de una web<a href="https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+          </article>
+          <article class="article-condiments">
+            <h3>Animaciones</h3>
+            <p><span>Animista </span> -> Colección de animaciones con CSS<a href="https://animista.net/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span> CSS Loaders</span> -> Colección de spinners<a href="https://cssloaders.github.io/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span> Loading IO</span> -> Coleccion de spinners y barras de carga<a href="https://loading.io/css" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span> Css-loaders</span> -> Coleccion enorme de todo tipo de loaders<a href="https://css-loaders.com/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+          </article>
+          <article class="article-condiments">
+            <h3>Extensiones de Google Chrome</h3>
+            <p><span> CSS Peeper</span> -> Permite leer paletas y assets de las webs<a href="https://chromewebstore.google.com/detail/css-peeper/mbnbehikldjhnfehhnaidhjhoofhpehk?pli=1" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span>Pesticide </span> -> Muestra la cuadricula de los elementos de la web<a href="https://chromewebstore.google.com/detail/pesticide-for-chrome-with/neonnmencpneifkhlmhmfhfiklgjmloi?pli=1" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span> VisBug</span> ->Un conjunto de herramientas que permite modificar y medir los elementos de la web <a href="https://chromewebstore.google.com/detail/visbug/cdockenadnadldjbbgcallicgledbeoc" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+            <p><span>ColorZilla  </span> -> Un cuentagotas para recuperar colores de las web<a href="https://chromewebstore.google.com/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i></a></p>
+          </article>
+      </section>
     </main>
     <footer class="barbacodes-footer">
       <div class="footer-content">
