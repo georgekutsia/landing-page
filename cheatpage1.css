@@ -102,7 +102,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 8px dashed var(--my-light-grey);
+  border: 12px dashed var(--my-light-grey);
   position: relative;
   overflow: hidden;
 }
