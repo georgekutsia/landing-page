@@ -226,11 +226,13 @@ nav h3 {
 
 .close-minimenu{
   position: absolute;
-  top: -10px;
+  top: -15px;
   right: 20px;
-  font-size: calc(24px + 0.5vw);
-text-shadow: 1px 2px 4px rgb(203, 113, 113);
-padding: 3px;
+  text-shadow: 1px 2px 4px rgb(203, 113, 113);
+  padding: 3px;
+  h3{
+    font-size: calc(30px + 1vw);
+  }
 }
 .close-minimenu:hover{
 box-shadow: 1px 2px 4px black;
@@ -251,5 +253,5 @@ cursor: pointer;
 }
 .a-all{
   background-color: var(--my-light-red);
-
+  overflow: scroll;
 }
