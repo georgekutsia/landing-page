@@ -317,3 +317,44 @@
 }
 @keyframes l6-0 {to{background-position:-31% 0%, 20% 100%}}
 @keyframes l6-1 {to{rotate: -40deg}}
+
+
+
+
+
+.animated-button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  border: 2px solid white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  overflow: hidden;
+  background: transparent;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Pseudo-elemento para animar el fondo */
+.animated-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: left 0.3s ease-in-out;
+  z-index: -1;
+}
+
+/* Efecto al pasar el mouse */
+.animated-button:hover {
+  color: black; /* Cambio de color del texto */
+}
+
+.animated-button:hover::before {
+  left: 0; /* Hace que la animación corra de izquierda a derecha */
+}
