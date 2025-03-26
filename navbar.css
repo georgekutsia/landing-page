@@ -59,6 +59,7 @@ nav h3, .close-minimenu i  {
   gap: 1vw;
   font-size: calc(12px + 0.5vw);
   margin-right: 100px;
+  align-items: center;
 }
 
 .nav-parts {
